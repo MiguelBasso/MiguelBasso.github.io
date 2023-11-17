@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Verificador de Puntuación y Números</title>
+    <link rel="icon" href="../.Imagenes/PokeIcon.png" type="image/png">
+    <link rel="stylesheet" href="Estilo.css">
+   
+</head>
+<body>
+    <center>
+        <h1>Verificador de Puntuación</h1>
+        <label for="puntuacion">Ingrese la puntuación del estudiante:</label>
+        <input type="number" id="puntuacion">
+        <button onclick="verificarPuntuacion()">Verificar</button>
+        <p id="resultadoPuntuacion"></p>
+
+        <h1>Verificador de Número</h1>
+        <label for="numero">Ingrese un número:</label>
+        <input type="number" id="numero">
+        <button onclick="verificarNumero()">Verificar</button>
+        <p id="resultadoNumero"></p>
+    </center>
+
+    <script>
+        function verificarPuntuacion() {
+            var puntuacion = parseFloat(document.getElementById("puntuacion").value);
+            var resultadoPuntuacion = puntuacion >= 70 ? "Pasó" : "No pasó";
+            document.getElementById("resultadoPuntuacion").innerText = "El estudiante " + resultadoPuntuacion;
+        }
+
+        function verificarNumero() {
+            var numero = parseFloat(document.getElementById("numero").value);
+            var resultadoNumero = numero > 0 ? "Positivo" : numero < 0 ? "Negativo" : "Cero";
+            document.getElementById("resultadoNumero").innerText = "El número es " + resultadoNumero;
+        }
+    </script>
+</body>
+</html>

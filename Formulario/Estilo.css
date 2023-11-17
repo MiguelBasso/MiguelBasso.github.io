@@ -1,0 +1,36 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #11ad38;
+}
+
+.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.formulario_input_container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.formulario_input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.formulario_submit {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#emailOK {
+    color: green;
+}
